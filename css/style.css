@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'TTLakes-Medium';
+    src: url('../fonts/TTLakes-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TTLakes-Bold';
+    src: url('../fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.body {
+    margin: 0;
+}
+
+.body__wrapper {
+    width: 768px;
+    height: 1024px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.menu {
+    position: relative;
+    width: 320px;
+    height: 1024px;
+    background-color: #FFFFFF;
+
+    filter:
+            drop-shadow(16px 0 52px rgba(14, 24, 80, 0.2))
+            drop-shadow(-2px 0 4px rgba(69, 79, 126, 0.02));
+    clip-path: inset(0 -100px 0 0);
+}
+
+.menu__icon-list,
+.contacts__icon-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.contacts__communication {
+    list-style-type: none;
+}
+
+.menu__navigation-item {
+    font-family: "TTLakes-Medium", "Arial", sans-serif;
+    display: grid;
+    color: #1B1C21;
+    margin: 32px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.menu__navigation-repair {
+    color: #7E7E82;
+}
+
+.menu__navigation-repair::before {
+    content: "";
+    position: absolute;
+
+    width: 4px;
+    height: 32px;
+    top: 78px;
+    left: 4px;
+    background-color: #41F6D7;
+    border-radius: 0 10px 10px 0;
+}
+
+.menu__icon-item,
+.contacts__icon-item {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.menu__icon-item--close {
+    background-image: url("../images/burger-closed.svg");
+}
+
+.menu__icon-logo {
+    width: 97px;
+    height: 51px;
+    background-image: url("../images/brand-cps.svg");
+    margin-left: 17px;
+    margin-right: 78px;
+}
+
+.menu__icon-search {
+    background-image: url("../images/search1.svg");
+}
+
+.contacts__icon-call {
+    background-image: url("../images/call.svg");
+}
+
+.contacts__icon-chat {
+    background-image: url("../images/chat.svg");
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.contacts__icon-profile {
+    background-image: url("../images/profile.svg");
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a[href^="tel:"] {
+    font-family: "TTLakes-Bold", "Arial", sans-serif;
+}
+
+.languages {
+    margin-left: 32px;
+}
+
+.languages__button--active {
+    color: #7E7E82;
+}
